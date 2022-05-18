@@ -20,13 +20,13 @@ Apply:
 		CREATE TABLE user
 		(
     			id   VARCHAR(50) NOT NULL,
-    			name VARCHAR(50) COMMENT '姓名',
+    			name VARCHAR(50) COMMENT 'name',
     			PRIMARY KEY (`id`)
 		);
 	Easy applied:
 		import io.simpleframework.crud.Models;
 
-		// 定义数据模型类
+		
 		public class User {
     			String id;
     			String name;
@@ -54,12 +54,12 @@ Easier(By using Active Record MOD):
 	    
 	}
 	
-	// 使用
+	// Apply
 	public class Demo {
 	
 	    public static void test() {
 	        User user = new User();
-	        user.setName("测试");
+	        user.setName("test");
 	        user.insert();
 	    }
 	
